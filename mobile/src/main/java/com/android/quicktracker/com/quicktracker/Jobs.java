@@ -95,4 +95,8 @@ public class Jobs {
     public void set_hours(Vector<Time[]> _hours) {
         this._hours = _hours;
     }
+
+    public void add_hours(Time[] new_hours){
+        this._hours.add(new_hours);
+    }
 }
