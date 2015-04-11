@@ -97,6 +97,8 @@ public class Jobs {
     }
 
     public void add_hours(Time[] new_hours){
-        this._hours.add(new_hours);
+        if(new_hours.length == 2) {
+            this._hours.add(new_hours);
+        }
     }
 }
