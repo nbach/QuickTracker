@@ -3,7 +3,6 @@ package com.android.quicktracker.com.quicktracker;
 import android.graphics.Color;
 import android.text.format.Time;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Vector;
 
