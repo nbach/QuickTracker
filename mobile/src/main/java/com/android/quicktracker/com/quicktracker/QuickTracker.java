@@ -45,7 +45,7 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
 
     View.OnClickListener myhandler1 = new View.OnClickListener() {
         public void onClick(View v) {
-            Intent intent = new Intent(QuickTracker.this, CalendarActivity.class);
+            Intent intent = new Intent(QuickTracker.this, AddJobActivity.class);
             startActivity(intent);
         }
     };
