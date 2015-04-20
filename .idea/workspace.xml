@@ -1,12 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="name" value="app: com.android.quicktracker.com.quicktracker" />
+        <option name="packageNamePattern" value="com.android.quicktracker.com.quicktracker" />
+      </filter>
+    </filters>
+  </component>
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <devices>
+          <device id="Nexus 7 2013" />
+          <device id="Nexus 5" />
+        </devices>
+        <target>android-22</target>
+      </config>
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_job.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_settings.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.android.quicktracker.com.quicktracker" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="246b6ec7-35f8-4d68-b647-5733f68631d9" name="Default" comment="" />
+    <list default="true" id="246b6ec7-35f8-4d68-b647-5733f68631d9" name="Default" comment="built most of app">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/background_navigation-web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-hdpi/background_navigation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-mdpi/background_navigation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-xhdpi/background_navigation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-xxhdpi/background_navigation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-xxxhdpi/background_navigation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_check.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_check.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_check.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_check.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_clipboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_clipboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_clipboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_clipboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/ic_launcher-web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/ic_logo-web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-hdpi/ic_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-mdpi/ic_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-xhdpi/ic_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-xxhdpi/ic_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/mipmap-xxxhdpi/ic_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/ic_plus-web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddTimeActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/CalendarActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/GeofenceTransitionsIntentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/NavDrawerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_time.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_calendar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_week_view_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable/circle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable/circle_delete.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable/circle_edit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/values/color.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/item_row.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/job_detail_row.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/drawable/material_button.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_time.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_calendar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/tool_bar.xml" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\play_services_base_6_5_87.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\play_services_wearable_6_5_87.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\recyclerview_v7_21_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\support_annotations_21_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\support_annotations_22_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\support_v4_21_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\support_v4_22_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\wearable_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\mobile\src\main\res\mipmap-hdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\mobile\src\main\res\mipmap-mdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\mobile\src\main\res\mipmap-xhdpi\ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\mobile\src\main\res\mipmap-xxhdpi\ic_launcher.png" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\appcompat_v7_22_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sugar_1_3.xml" />
+      <change type="MOVED" beforePath="C:\Users\nbach_000\AndroidStudioProjects\QuickTracker\.idea\libraries\play_services_6_5_87.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_21_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/generated/res/microapk/debug/raw/android_wear_micro_apk.apk" afterPath="$PROJECT_DIR$/mobile/build/generated/res/microapk/debug/raw/android_wear_micro_apk.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/mobile/build/intermediates/resources/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/wear/build/intermediates/resources/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/mobile/build/intermediates/resources/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/wear/build/intermediates/resources/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/resources/resources-release.ap_" afterPath="$PROJECT_DIR$/wear/build/intermediates/resources/resources-release.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddJobActivity.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddJobActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/intermediates/generated/manifests/microapk/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mobile/build/intermediates/generated/manifests/microapk/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/AndroidManifest.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/AndroidManifest.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/buildConfig/androidTest/debug/com/android/quicktracker/com/quicktracker/test/BuildConfig.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/buildConfig/androidTest/debug/com/android/quicktracker/com/quicktracker/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/buildConfig/debug/com/android/quicktracker/com/quicktracker/BuildConfig.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/buildConfig/debug/com/android/quicktracker/com/quicktracker/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/buildConfig/release/com/android/quicktracker/com/quicktracker/BuildConfig.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/buildConfig/release/com/android/quicktracker/com/quicktracker/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/JobDetailsActivity.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/JobDetailsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/Jobs.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/Jobs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/com/android/quicktracker/com/quicktracker/R.java" afterPath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/com/android/quicktracker/com/quicktracker/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/mobile/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/r/debug/android/support/wearable/R.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/r/debug/android/support/wearable/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/r/release/android/support/wearable/R.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/r/release/android/support/wearable/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/r/release/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/r/release/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/generated/source/r/release/com/google/android/gms/wearable/R.java" afterPath="$PROJECT_DIR$/wear/build/generated/source/r/release/com/google/android/gms/wearable/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/R.txt" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/R.txt" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/R.txt" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/SettingsActivity.java" afterPath="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/SettingsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/aidl/android/support/wearable/watchface/WatchFaceStyle.aidl" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/aidl/android/support/wearable/watchface/WatchFaceStyle.aidl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_job.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_job.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_job_details.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_job_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_quick_tracker.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_quick_tracker.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_settings.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/layout/activity_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/build.gradle" afterPath="$PROJECT_DIR$/mobile/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/card_background.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/card_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/close_button.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/close_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/common_attrs.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/common_attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/common_colors.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/common_colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_icon_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_icon_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/color/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_text_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/color/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/drawable/common_signin_btn_text_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-af/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-af/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-am/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-am/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ar/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ar/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-bg/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-bg/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-bn-rBD/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-bn-rBD/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ca/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ca/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-cs/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-cs/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-da/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-da/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-de/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-de/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-el/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-el/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-en-rGB/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-en-rGB/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-en-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-en-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es-rUS/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es-rUS/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-et-rEE/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-et-rEE/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-eu-rES/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-eu-rES/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fa/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fa/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fi/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fi/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fr/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fr-rCA/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-fr-rCA/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-gl-rES/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-gl-rES/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hi/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hi/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hr/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hu/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hu/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hy-rAM/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-hy-rAM/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-in/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-in/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-is-rIS/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-is-rIS/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-it/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-it/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-iw/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-iw/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ja/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ja/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ka-rGE/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ka-rGE/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-kk-rKZ/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-kk-rKZ/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-km-rKH/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-km-rKH/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-kn-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-kn-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ko/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ko/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ky-rKG/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ky-rKG/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-lo-rLA/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-lo-rLA/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-lt/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-lt/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-lv/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-lv/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-mk-rMK/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-mk-rMK/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ml-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ml-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-mn-rMN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-mn-rMN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-mr-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-mr-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ms-rMY/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ms-rMY/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-my-rMM/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-my-rMM/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-nb/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-nb/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ne-rNP/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ne-rNP/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-nl/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-nl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pl/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pt/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pt/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pt-rBR/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pt-rBR/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pt-rPT/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-pt-rPT/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ro/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ro/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ru/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ru/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-si-rLK/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-si-rLK/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sk/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sk/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sl/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sr/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sv/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sv/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sw/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-sw/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ta-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ta-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-te-rIN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-te-rIN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-th/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-th/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-tl/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-tl/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-tr/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-tr/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-uk/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-uk/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ur-rPK/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-ur-rPK/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-uz-rUZ/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-uz-rUZ/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-vi/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-vi/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zh-rCN/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zh-rCN/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zh-rHK/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zh-rHK/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zh-rTW/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zh-rTW/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zu/common_strings.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-zu/common_strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/layout-v20/confirmation_activity_layout.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/layout-v20/confirmation_activity_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/confirmation_animation.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/confirmation_animation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/layout-v20/dismiss_overlay.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/layout-v20/dismiss_overlay.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/go_to_phone_animation.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/drawable/go_to_phone_animation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_job.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_job.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_job_details.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_job_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_quick_tracker.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_quick_tracker.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_settings.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/menu/menu_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/mobile.iml" afterPath="$PROJECT_DIR$/mobile/mobile.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/proguard.txt" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/proguard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/proguard.txt" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/6.5.87/proguard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/mobile/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values-v20/values.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/values-v20/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/version.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values/version.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/layout-v20/watch_card_content.xml" afterPath="$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/res/layout-v20/watch_card_content.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/wear.iml" afterPath="$PROJECT_DIR$/wear/wear.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="QuickTracker.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,49 +275,126 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="AddJobActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddJobActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.857143" vertical-offset="1626" max-vertical-offset="6188">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2649#2659#0" expanded="true" />
+                <element signature="e#6979#9440#0" expanded="true" />
+                <element signature="e#9433#9434#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddTimeActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddTimeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="2720">
+              <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+              <folding>
+                <element signature="e#1863#1871#0" expanded="true" />
+                <element signature="e#2046#2054#0" expanded="true" />
+                <element signature="e#3892#3911#0" expanded="true" />
+                <element signature="e#3913#3933#0" expanded="true" />
+                <element signature="e#4016#4017#0" expanded="true" />
+                <element signature="e#4096#4097#0" expanded="true" />
+                <element signature="e#4448#4651#0" expanded="true" />
+                <element signature="e#4644#4645#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_add_time.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_time.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.703704" vertical-offset="252" max-vertical-offset="1649">
+              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavDrawerAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/NavDrawerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="956" max-vertical-offset="1462">
+              <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="QuickTracker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2618" max-vertical-offset="3111">
+              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_quick_tracker.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_quick_tracker.xml">
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2346">
+              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="job_detail_row.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/job_detail_row.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickTracker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.8888888" vertical-offset="269" max-vertical-offset="748">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_quick_tracker.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wear/src/main/res/layout/activity_quick_tracker.xml">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24434389" vertical-offset="0" max-vertical-offset="663">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.70776254" vertical-offset="752" max-vertical-offset="1241">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="442">
+              <caret line="17" column="99" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_add_job.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_job.xml">
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6296296" vertical-offset="3230" max-vertical-offset="4097">
+              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -80,6 +404,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -103,12 +430,12 @@
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":mobile" />
-                <option name="path" value="$PROJECT_DIR$/mobile" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
                 <option name="name" value=":wear" />
                 <option name="path" value="$PROJECT_DIR$/wear" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":mobile" />
+                <option name="path" value="$PROJECT_DIR$/mobile" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -481,9 +808,24 @@
                 <option name="name" value="prepareComAndroidSupportAppcompatV72200Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:21.0.3" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mobile" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72103Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-v4:22.0.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mobile" />
                 <option name="name" value="prepareComAndroidSupportSupportV42200Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.github.alamkanak:android-week-view:1.2.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mobile" />
+                <option name="name" value="prepareComGithubAlamkanakAndroidWeekView121Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.github.satyan:sugar:1.3" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mobile" />
+                <option name="name" value="prepareComGithubSatyanSugar13Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services:6.5.87" />
@@ -1067,7 +1409,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5715122295936" />
+        <entry key="$PROJECT_DIR$" value="5716215821361" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1233,10 +1575,13 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.0.0/appcompat-v7-22.0.0.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/google/m2repository/com/google/android/gms/play-services/6.5.87/play-services-6.5.87.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/android/m2repository/com/android/support/support-v4/22.0.0/support-v4-22.0.0.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.alamkanak/android-week-view/1.2.1/f8394c7c51e56a7406159614df301a16862ce746/android-week-view-1.2.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.satyan/sugar/1.3/c2a3669151f72f7ac921d8c0f84ce4a8cc5e0cbb/sugar-1.3.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/21.0.3/recyclerview-v7-21.0.3.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.0.0/appcompat-v7-22.0.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services/6.5.87/play-services-6.5.87.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.0.0/support-v4-22.0.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/mobile" />
@@ -1318,12 +1663,12 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/google/m2repository/com/google/android/support/wearable/1.1.0/wearable-1.1.0.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/google/m2repository/com/google/android/gms/play-services-wearable/6.5.87/play-services-wearable-6.5.87.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/android/m2repository/com/android/support/support-v4/21.0.0/support-v4-21.0.0.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/android/m2repository/com/android/support/recyclerview-v7/21.0.0/recyclerview-v7-21.0.0.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/google/m2repository/com/google/android/gms/play-services-base/6.5.87/play-services-base-6.5.87.aar" />
-                            <option value="$PROJECT_DIR$/../../Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/support/wearable/1.1.0/wearable-1.1.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-wearable/6.5.87/play-services-wearable-6.5.87.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/21.0.0/support-v4-21.0.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/21.0.0/recyclerview-v7-21.0.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-base/6.5.87/play-services-base-6.5.87.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/wear" />
@@ -1335,59 +1680,59 @@
               <option name="name" value="QuickTracker" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-core-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-cli-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-tooling-api-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-1.9.3.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-ui-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-docs-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-resources-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-groovy-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-cli-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-core-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-docs-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-messaging-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-core-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-groovy-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-native-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-open-api-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-core-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/ant-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-model-groovy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/groovy-all-2.3.6.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-resources-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-tooling-api-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-ui-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-wrapper-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/gradle-base-services-groovy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-resources-http-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/groovy-all-2.3.6.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ant-antlr-1.9.3.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-scala-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-code-quality-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-javascript-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-reporting-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-groovy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-base-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ear-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-antlr-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-jvm-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jetty-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-signing-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-cunit-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-comparison-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-publish-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-osgi-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-diagnostics-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugins-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-native-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-init-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-java-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-use-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-jvm-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-maven-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ivy-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-development-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-announce-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-sonar-2.2.1.jar" />
-                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-antlr-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-comparison-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-build-init-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-code-quality-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-cunit-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-dependency-management-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-diagnostics-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ear-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ide-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-ivy-2.2.1.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jacoco-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-javascript-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-jetty-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-groovy-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-java-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-jvm-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-language-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-maven-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-osgi-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-base-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-jvm-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-platform-native-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-development-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugin-use-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-plugins-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-publish-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-reporting-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-resources-http-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-scala-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-signing-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/gradle-sonar-2.2.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1398,11 +1743,59 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1600" />
-    <option name="height" value="878" />
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/toolbar.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_nav_drawer_adapter.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/anim.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/menu/menu_quick_tracker.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_job.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/menu/menu_job_details.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/drawable/material_button.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/JobDetailsAdapter.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/menu/menu_settings.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/drawable/circle_delete.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/NavDrawerAdapter.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/menu/menu_calendar.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/header.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/drawable/circle_edit.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/values/color.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_job.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_calendar.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/tool_bar.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_time.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_job_details.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/drawable/circle.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_quick_tracker.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_settings.xml" />
+        <option value="$PROJECT_DIR$/mobile/build.gradle" />
+        <option value="$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/Jobs.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/item_row.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/CalendarActivity.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/GeofenceTransitionsIntentService.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/JobDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddJobActivity.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddTimeActivity.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_time.xml" />
+        <option value="$PROJECT_DIR$/mobile/src/main/res/layout/job_detail_row.xml" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="939" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -1429,7 +1822,6 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1437,9 +1829,178 @@
               <option name="myItemId" value="QuickTracker" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dimens.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mipmap" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quicktracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuickTracker" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1450,10 +2011,50 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="android.sdk.path" value="$PROJECT_DIR$/../../Android/Sdk" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="368" />
+    <property name="options.lastSelected" value="editor.preferences.import" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="TA9921CATS" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Android Application.wear">
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.android.quicktracker.com.quicktracker" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Application.mobile">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1550,7 +2151,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1561,6 +2162,8 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="wear" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1581,6 +2184,8 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="2">
@@ -1605,47 +2210,90 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="246b6ec7-35f8-4d68-b647-5733f68631d9" name="Default" comment="" />
       <created>1428780574853</created>
       <updated>1428780574853</updated>
     </task>
+    <task id="LOCAL-00001" summary="added some initial screens and layouts. no functionality">
+      <created>1429060429238</created>
+      <updated>1429060429238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1600" height="878" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1456" height="939" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5595568" sideWeight="0.2121651" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40409207" sideWeight="0.38108882" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40409207" sideWeight="0.61891115" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22851002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34752747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23913044" sideWeight="0.1726361" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2965616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14961638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23913044" sideWeight="0.1726361" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34398976" sideWeight="0.8273639" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1662,85 +2310,436 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="added some initial screens and layouts. no functionality" />
+    <MESSAGE value="built most of app" />
+    <option name="LAST_COMMIT_MESSAGE" value="built most of app" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java">
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_action_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_action_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/values-w820dp/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable/material_button.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_action_name2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-hdpi/ic_action_name2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_action_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_check.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_action_name2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_action_name2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-xhdpi/ic_action_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable/circle_delete.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-xxhdpi/ic_edit.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable-mdpi/ic_check.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/header.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.851851" vertical-offset="186" max-vertical-offset="663">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.72" vertical-offset="2" max-vertical-offset="510">
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable/circle_edit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_job.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/tool_bar.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5185184" vertical-offset="0" max-vertical-offset="289">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/menu/menu_calendar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/menu/menu_add_time.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/menu/menu_quick_tracker.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/menu/menu_job_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/menu/menu_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_calendar.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665" vertical-offset="816" max-vertical-offset="1139">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_job_details.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1851852" vertical-offset="689" max-vertical-offset="952">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/drawable/circle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_quick_tracker.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.037037" vertical-offset="493" max-vertical-offset="986">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wear/src/main/res/layout/activity_quick_tracker.xml">
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_settings.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="270">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.481482" vertical-offset="298" max-vertical-offset="1173">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="629">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="35271" max-vertical-offset="85918">
+          <caret line="2257" column="38" selection-start-line="2257" selection-start-column="38" selection-end-line="2257" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar!/com/google/android/gms/maps/model/LatLng.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35654595" vertical-offset="8" max-vertical-offset="544">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="2074">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2413#2414#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2693#2694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/item_row.xml">
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6666665" vertical-offset="99" max-vertical-offset="510">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/CalendarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="4386">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4565#4580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/GeofenceTransitionsIntentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.964286" vertical-offset="1762" max-vertical-offset="2363">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/JobDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3638" max-vertical-offset="4131">
+          <caret line="283" column="1" selection-start-line="283" selection-start-column="1" selection-end-line="283" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/NavDrawerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="956" max-vertical-offset="1462">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2618" max-vertical-offset="3111">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_quick_tracker.xml">
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2346">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddJobActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.857143" vertical-offset="1626" max-vertical-offset="6188">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2649#2659#0" expanded="true" />
+            <element signature="e#6979#9440#0" expanded="true" />
+            <element signature="e#9433#9434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/android/quicktracker/com/quicktracker/AddTimeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="2720">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+          <folding>
+            <element signature="e#1863#1871#0" expanded="true" />
+            <element signature="e#2046#2054#0" expanded="true" />
+            <element signature="e#3892#3911#0" expanded="true" />
+            <element signature="e#3913#3933#0" expanded="true" />
+            <element signature="e#4016#4017#0" expanded="true" />
+            <element signature="e#4096#4097#0" expanded="true" />
+            <element signature="e#4448#4651#0" expanded="true" />
+            <element signature="e#4644#4645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_time.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/android/quicktracker/com/quicktracker/QuickTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.703704" vertical-offset="252" max-vertical-offset="1649">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wear/src/main/res/layout/activity_quick_tracker.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24434389" vertical-offset="0" max-vertical-offset="663">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/activity_add_job.xml">
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6296296" vertical-offset="3230" max-vertical-offset="4097">
+          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/job_detail_row.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8888888" vertical-offset="269" max-vertical-offset="748">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="442">
+          <caret line="17" column="99" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.70776254" vertical-offset="752" max-vertical-offset="1241">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

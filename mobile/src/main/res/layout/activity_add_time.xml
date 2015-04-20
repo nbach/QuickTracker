@@ -1,0 +1,91 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp"
+    tools:context="com.android.quicktracker.com.quicktracker.JobDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.android.quicktracker.com.quicktracker.SettingsActivity">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:layout_marginLeft="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select Job"
+            android:id="@+id/spinnerTextView"
+            android:textSize="25sp"
+            android:layout_marginTop="71dp"
+            android:layout_alignParentStart="true" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/spinner"
+            android:layout_toRightOf="@+id/spinnerTextView"
+            android:layout_marginTop="71dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tool_bar"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Start Time"
+            android:id="@+id/startTimeTextView"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startTimeTextView"
+            android:layout_marginLeft="25dp"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="End Time"
+            android:id="@+id/endTimeTextView"
+            android:textSize="30sp"
+            android:layout_marginTop="110dp"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/addTimeButton"
+            style="@style/AppTheme2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle"
+            android:elevation="5dp"
+            android:src="@drawable/ic_check" />
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#00B2EE"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>

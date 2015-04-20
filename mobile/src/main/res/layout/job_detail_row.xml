@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/jobDetailRowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+         />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        style="@style/AppTheme2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_delete"
+        android:elevation="5dp"
+        android:src="@drawable/ic_action_name2" />
+
+    <ImageButton
+        android:id="@+id/editButton"
+        style="@style/AppTheme2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/deleteButton"
+        android:background="@drawable/circle_edit"
+        android:elevation="5dp"
+        android:src="@drawable/ic_edit" />
+</RelativeLayout>

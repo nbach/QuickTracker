@@ -6,4 +6,19 @@
     <string name="title_activity_add_job">AddJobActivity</string>
     <string name="title_activity_job_details">JobDetailsActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+    <string name="title_activity_nav_drawer_adapter">NavDrawerAdapter</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_add_time">AddTimeActivity</string>
+    <string-array name="color_array">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Brown</item>
+        <item>Black</item>
+    </string-array>
 </resources>
