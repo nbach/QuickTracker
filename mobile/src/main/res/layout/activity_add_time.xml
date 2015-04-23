@@ -15,52 +15,84 @@
             android:id="@+id/tool_bar"
             layout="@layout/tool_bar"></include>
 
-        <TextView
+
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tool_bar"
-            android:layout_marginLeft="25dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Select Job"
-            android:id="@+id/spinnerTextView"
-            android:textSize="25sp"
-            android:layout_marginTop="71dp"
-            android:layout_alignParentStart="true" />
+            android:src="@drawable/ic_clipboard_gray"
+            android:id="@+id/jobImageView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tool_bar"/>
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:id="@+id/spinner"
-            android:layout_toRightOf="@+id/spinnerTextView"
-            android:layout_marginTop="71dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_below="@+id/tool_bar"
-            android:layout_alignParentStart="true" />
+            android:layout_toRightOf="@+id/jobImageView"
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
 
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_time"
+            android:id="@+id/timeImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/jobImageView"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/spinner"
+            android:layout_below="@+id/jobImageView"
+            android:id="@+id/startDateTextView"
             android:layout_marginLeft="25dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Start Time"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/jobImageView"
+            android:onClick="onClickStartDate"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobImageView"
             android:id="@+id/startTimeTextView"
-            android:textSize="30sp"
-            android:layout_marginTop="50dp"
-            android:layout_alignParentStart="true" />
-
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/startDateTextView"
+            android:onClick="onClickStartTime"
+            android:clickable="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/startTimeTextView"
+            android:id="@+id/endDateTextView"
             android:layout_marginLeft="25dp"
-
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="End Time"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/timeImageView"
+            android:onClick="onClickEndDate"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startTimeTextView"
             android:id="@+id/endTimeTextView"
-            android:textSize="30sp"
-            android:layout_marginTop="110dp"
-            android:layout_alignParentStart="true" />
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/endDateTextView"
+            android:onClick="onClickEndTime"
+            android:clickable="true"/>
+
+
+
+
 
         <ImageButton
             android:id="@+id/addTimeButton"
@@ -74,6 +106,8 @@
             android:background="@drawable/circle"
             android:elevation="5dp"
             android:src="@drawable/ic_check" />
+
+
 
 
     </RelativeLayout>

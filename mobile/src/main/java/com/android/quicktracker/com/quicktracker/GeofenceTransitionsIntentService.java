@@ -53,17 +53,23 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
             for (int i=0; i<triggeringGeofences.size(); i++) {
                 //AddJobActivity.jobList.add(new Jobs("TEST", "TRIG"));
+                int triggeringGeofenceLocation = -1;
+                for (int j=0; j<Jobs.jobList.size(); j++){
+                    if (((Geofence) triggeringGeofences.get(i)).getRequestId().equals(AddJobActivity.mGeofenceList.get(j).getRequestId())){
+                        triggeringGeofenceLocation = j;
+                    }
+                }
                 if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER) {
-                    Jobs job = Jobs.jobList.get(i);
-                    job._start_hours = rightNow.HOUR_OF_DAY;
-                    job._start_minutes = rightNow.MINUTE;
+                    Jobs job = Jobs.jobList.get(triggeringGeofenceLocation);
+                    job.set_start_hours(rightNow.HOUR_OF_DAY);
+                    job.set_start_minutes(rightNow.MINUTE);
                     job.save();
                     Jobs.jobList = Jobs.listAll(Jobs.class);
                                    }
                 if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT) {
-                    Jobs job = Jobs.jobList.get(i);
-                    job._end_hours=rightNow.HOUR_OF_DAY;
-                    job._end_minutes=rightNow.MINUTE;
+                    Jobs job = Jobs.jobList.get(triggeringGeofenceLocation);
+                    job.set_end_hours(rightNow.HOUR_OF_DAY);
+                    job.set_end_minutes(rightNow.MINUTE);
                     job.save();
                     Jobs.jobList = Jobs.listAll(Jobs.class);
                 }

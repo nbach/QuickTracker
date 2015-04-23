@@ -190,8 +190,6 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
                 job.save();
                 Jobs.jobList = Jobs.listAll(Jobs.class);
                 mGeofenceList.add(new Geofence.Builder()
-                        // Set the request ID of the geofence. This is a string to identify this
-                        // geofence.
                         .setRequestId(taskName)
                         .setCircularRegion(
                                 getLocationFromAddress(addressName).latitude,

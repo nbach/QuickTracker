@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:elevation="7dp"
-    tools:context="com.android.quicktracker.com.quicktracker.JobDetailsActivity">
+    tools:context="com.android.quicktracker.com.quicktracker.SettingsActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"

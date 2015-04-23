@@ -131,23 +131,31 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         if (Jobs.jobList != null) {
             for (int i = 0; i < Jobs.jobList.size(); i++) {
                 Jobs currentJob = Jobs.jobList.get(i);
-                if (currentJob._start_hours >0) {
-                    for (int j = 0; j < 1; j++) {
+                ArrayList<int[]> currentJobEvents = currentJob._get_time();
+                if (currentJobEvents == null){
+                    Toast.makeText(this, "Test", Toast.LENGTH_LONG).show();
+                }
+                //Toast.makeText(this, "test", Toast.LENGTH_LONG).show();
+                if (currentJobEvents!=null && currentJobEvents.size() > 0) {
+                    Toast.makeText(this, "test", Toast.LENGTH_LONG).show();
+
+                    for (int j = 0; j < currentJobEvents.size(); j++) {
+                        int[] times = currentJobEvents.get(j);
                         Calendar startTime = Calendar.getInstance();
-                        startTime.set(Calendar.HOUR_OF_DAY, currentJob._start_hours);
-                        startTime.set(Calendar.MINUTE, currentJob._start_minutes);
+                        startTime.set(Calendar.HOUR_OF_DAY, times[0]);
+                        startTime.set(Calendar.MINUTE, times[1]);
                         startTime.set(Calendar.MONTH, newMonth - 1);
                         startTime.set(Calendar.YEAR, newYear);
-                        Calendar endTime = Calendar.getInstance();
-                        if (currentJob._end_hours >0 ) {
-                            endTime.set(Calendar.HOUR_OF_DAY, currentJob._end_hours);
-                            endTime.set(Calendar.MINUTE, currentJob._end_minutes);
+                        Calendar endTime = (Calendar) startTime.clone();
+
+                            endTime.set(Calendar.HOUR_OF_DAY, times[2]);
+                            endTime.set(Calendar.MINUTE, times[3]);
                             endTime.set(Calendar.MONTH, newMonth - 1);
                             endTime.set(Calendar.YEAR, newYear);
-                            WeekViewEvent event = new WeekViewEvent(i, getEventTitle(startTime), startTime, endTime);
+                            WeekViewEvent event = new WeekViewEvent(i, currentJob.get_name(), startTime, endTime);
                             event.setColor(getResources().getColor(R.color.ColorPrimary));
                             events.add(event);
-                        }
+
                     }
                 }
             }
@@ -205,12 +213,19 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
     }
 
     View.OnClickListener myhandler1 = new View.OnClickListener() {
+
         public void onClick(View v) {
+            Jobs.jobList = Jobs.listAll(Jobs.class);
+            if (Jobs.jobList.size() < 1){
+                Toast.makeText(getBaseContext(), "Please create a job before trying to add hours", Toast.LENGTH_LONG).show();
+                return;
+            }
             Intent intent = new Intent(CalendarActivity.this, AddTimeActivity.class);
             startActivity(intent);
         }
     };
     public void onTouchDrawer(final int position) {
+
         int lastMenu=2;
         final int JOB_DETAILS_POSITION=1;
         final int CALENDAR_POSITION = 2;
@@ -242,9 +257,6 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         return true;
     }
 
-    private String getEventTitle(Calendar time) {
-        return String.format("Event of %02d:%02d %s/%d", time.get(Calendar.HOUR_OF_DAY), time.get(Calendar.MINUTE), time.get(Calendar.MONTH)+1, time.get(Calendar.DAY_OF_MONTH));
-    }
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
