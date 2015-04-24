@@ -132,26 +132,22 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
             for (int i = 0; i < Jobs.jobList.size(); i++) {
                 Jobs currentJob = Jobs.jobList.get(i);
                 ArrayList<int[]> currentJobEvents = currentJob._get_time();
-                if (currentJobEvents == null){
-                    Toast.makeText(this, "Test", Toast.LENGTH_LONG).show();
-                }
-                //Toast.makeText(this, "test", Toast.LENGTH_LONG).show();
                 if (currentJobEvents!=null && currentJobEvents.size() > 0) {
-                    Toast.makeText(this, "test", Toast.LENGTH_LONG).show();
-
                     for (int j = 0; j < currentJobEvents.size(); j++) {
                         int[] times = currentJobEvents.get(j);
                         Calendar startTime = Calendar.getInstance();
                         startTime.set(Calendar.HOUR_OF_DAY, times[0]);
                         startTime.set(Calendar.MINUTE, times[1]);
-                        startTime.set(Calendar.MONTH, newMonth - 1);
-                        startTime.set(Calendar.YEAR, newYear);
+                        startTime.set(Calendar.DAY_OF_MONTH, times[4]);
+                        startTime.set(Calendar.MONTH, times[5]);
+                        startTime.set(Calendar.YEAR, times[6]);
                         Calendar endTime = (Calendar) startTime.clone();
 
                             endTime.set(Calendar.HOUR_OF_DAY, times[2]);
                             endTime.set(Calendar.MINUTE, times[3]);
-                            endTime.set(Calendar.MONTH, newMonth - 1);
-                            endTime.set(Calendar.YEAR, newYear);
+                            endTime.set(Calendar.DAY_OF_MONTH, times[7]);
+                            endTime.set(Calendar.MONTH, times[8]);
+                            endTime.set(Calendar.YEAR, times[9]);
                             WeekViewEvent event = new WeekViewEvent(i, currentJob.get_name(), startTime, endTime);
                             event.setColor(getResources().getColor(R.color.ColorPrimary));
                             events.add(event);

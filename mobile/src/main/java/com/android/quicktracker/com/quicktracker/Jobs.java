@@ -25,6 +25,12 @@ public class Jobs extends SugarRecord<Jobs> {
     private int _end_hours = 0;
     private int _end_minutes = 0;
     private String _time = "";
+    private int _start_date;
+    private int _start_month;
+    private int _start_year;
+    private int _end_date;
+    private int _end_month;
+    private int _end_year;
     public static List<Jobs> jobList;
 
     public Jobs(){}
@@ -69,8 +75,8 @@ public class Jobs extends SugarRecord<Jobs> {
         int valuesIndex = 0;
         ArrayList<int[]> returnList = new ArrayList<int[]>();
         while (valuesIndex < values.length) {
-            int[] toAdd = new int[4];
-            for (int j = 0; j < 4; j++) {
+            int[] toAdd = new int[10];
+            for (int j = 0; j < 10; j++) {
                 toAdd[j] = values[valuesIndex];
                 valuesIndex++;
             }
@@ -82,7 +88,7 @@ public class Jobs extends SugarRecord<Jobs> {
     public String arrayToString(ArrayList<int[]> input){
         String returnString="";
         for (int i=0; i<input.size(); i++){
-            for (int j=0; j<4; j++){
+            for (int j=0; j<10; j++){
                 returnString += Integer.toString(input.get(i)[j]);
                 returnString += ",";
             }
@@ -126,6 +132,24 @@ public class Jobs extends SugarRecord<Jobs> {
     public void set_end_minutes(int end_minutes){
        this._end_minutes= end_minutes;
     }
+    public void set_start_date(int date){
+        this._start_date = date;
+    }
+    public void set_start_month(int month){
+        this._start_month= month;
+    }
+    public void set_start_year(int year){
+        this._start_year= year;
+    }
+    public void set_end_date(int date){
+        this._end_date = date;
+    }
+    public void set_end_month(int month){
+        this._end_month= month;
+    }
+    public void set_end_year(int year){
+        this._end_year= year;
+    }
     public int get_start_hours(){
         return this._start_hours;
     }
@@ -138,6 +162,14 @@ public class Jobs extends SugarRecord<Jobs> {
     public int get_end_minutes(){
         return this._end_minutes;
     }
+    public int get_start_date(){return this._start_date;
+    }
+    public int get_start_month(){return this._start_month;}
+    public int get_start_year(){return this._start_year;}
+    public int get_end_date(){return this._end_date;
+    }
+    public int get_end_month(){return this._end_month;}
+    public int get_end_year(){return this._end_year;}
 
     public String get_time_string(){
         return _time;
@@ -145,7 +177,7 @@ public class Jobs extends SugarRecord<Jobs> {
 
     //Add new info to time String
     public void add_time(){
-        int[] transferIntegers = new int[]{_start_hours,_start_minutes,_end_hours,_end_minutes};
+        int[] transferIntegers = new int[]{_start_hours,_start_minutes,_end_hours,_end_minutes,_start_date,_start_month,_start_year,_end_date,_end_month,_end_year};
         //If time elapsed is zero, return
         if (_start_hours == _end_hours &&_start_minutes == _end_minutes){
             return;

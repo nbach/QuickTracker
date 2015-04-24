@@ -55,13 +55,21 @@ public class AddTimeActivity extends ActionBarActivity {
     final Calendar defaultSelection = Calendar.getInstance();
     DatePickerDialog.OnDateSetListener dateStart = new DatePickerDialog.OnDateSetListener() {
 
-        @Override
+       @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear,
                               int dayOfMonth) {
             userSelection.set(Calendar.YEAR, year);
             userSelection.set(Calendar.MONTH, monthOfYear);
             userSelection.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-            Jobs.jobList.get(0).save();
+            selectedJob.set_start_date(userSelection.get(Calendar.DAY_OF_MONTH));
+            selectedJob.set_start_month(userSelection.get(Calendar.MONTH));
+            selectedJob.set_start_year(userSelection.get(Calendar.YEAR));
+            TextView startDate = (TextView) findViewById(R.id.startDateTextView);
+            String dayOfWeek = getDay(userSelection.DAY_OF_WEEK);
+            String month = getMonth(userSelection.MONTH);
+            String startDateString = dayOfWeek + ", " + month + " " + Integer.toString(userSelection.DAY_OF_MONTH) + ", " + Integer.toString(2015);
+            startDate.setText(startDateString);
+            selectedJob.save();
         }
 
     };
@@ -73,7 +81,15 @@ public class AddTimeActivity extends ActionBarActivity {
             userSelection.set(Calendar.YEAR, year);
             userSelection.set(Calendar.MONTH, monthOfYear);
             userSelection.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-            Jobs.jobList.get(0).save();
+            selectedJob.set_end_date(userSelection.get(Calendar.DAY_OF_MONTH));
+            selectedJob.set_end_month(userSelection.get(Calendar.MONTH));
+            selectedJob.set_end_year(userSelection.get(Calendar.YEAR));
+            TextView endDate = (TextView) findViewById(R.id.endDateTextView);
+            String dayOfWeek = getDay(userSelection.DAY_OF_WEEK);
+            String month = getMonth(userSelection.MONTH);
+            String endDateString = dayOfWeek + ", " + month + " " + Integer.toString(userSelection.DAY_OF_MONTH) + ", " + Integer.toString(2015);
+            endDate.setText(endDateString);
+            selectedJob.save();
         }
 
     };
@@ -221,7 +237,6 @@ public class AddTimeActivity extends ActionBarActivity {
         public void onClick(View v) {
             selectedJob.add_time();
             selectedJob.save();
-            Toast.makeText(getBaseContext(), selectedJob.get_time_string(), Toast.LENGTH_LONG).show();
             Intent intent = new Intent(AddTimeActivity.this, CalendarActivity.class);
             startActivity(intent);
         }
@@ -238,6 +253,12 @@ public class AddTimeActivity extends ActionBarActivity {
 
     public void onClickStartDate(View v){
         new DatePickerDialog(AddTimeActivity.this, dateStart, userSelection
+                .get(Calendar.YEAR), userSelection.get(Calendar.MONTH),
+                userSelection.get(Calendar.DAY_OF_MONTH)).show();
+    }
+
+    public void onClickEndDate(View v){
+        new DatePickerDialog(AddTimeActivity.this, dateEnd, userSelection
                 .get(Calendar.YEAR), userSelection.get(Calendar.MONTH),
                 userSelection.get(Calendar.DAY_OF_MONTH)).show();
     }
