@@ -50,7 +50,6 @@ public class AddTimeActivity extends ActionBarActivity {
     DrawerLayout Drawer;
     ListView mListView;
     ActionBarDrawerToggle mDrawerToggle;
-    ImageButton b1;
     final Calendar userSelection = Calendar.getInstance();
     final Calendar defaultSelection = Calendar.getInstance();
     DatePickerDialog.OnDateSetListener dateStart = new DatePickerDialog.OnDateSetListener() {
@@ -65,9 +64,9 @@ public class AddTimeActivity extends ActionBarActivity {
             selectedJob.set_start_month(userSelection.get(Calendar.MONTH));
             selectedJob.set_start_year(userSelection.get(Calendar.YEAR));
             TextView startDate = (TextView) findViewById(R.id.startDateTextView);
-            String dayOfWeek = getDay(userSelection.DAY_OF_WEEK);
-            String month = getMonth(userSelection.MONTH);
-            String startDateString = dayOfWeek + ", " + month + " " + Integer.toString(userSelection.DAY_OF_MONTH) + ", " + Integer.toString(2015);
+            String dayOfWeek = getDay(userSelection.get(Calendar.DAY_OF_WEEK));
+            String month = getMonth(userSelection.get(Calendar.MONTH));
+            String startDateString = dayOfWeek + ", " + month + " " + Integer.toString(userSelection.get(Calendar.DAY_OF_MONTH)) + ", " + Integer.toString(2015);
             startDate.setText(startDateString);
             selectedJob.save();
         }
@@ -85,9 +84,9 @@ public class AddTimeActivity extends ActionBarActivity {
             selectedJob.set_end_month(userSelection.get(Calendar.MONTH));
             selectedJob.set_end_year(userSelection.get(Calendar.YEAR));
             TextView endDate = (TextView) findViewById(R.id.endDateTextView);
-            String dayOfWeek = getDay(userSelection.DAY_OF_WEEK);
-            String month = getMonth(userSelection.MONTH);
-            String endDateString = dayOfWeek + ", " + month + " " + Integer.toString(userSelection.DAY_OF_MONTH) + ", " + Integer.toString(2015);
+            String dayOfWeek = getDay(userSelection.get(Calendar.DAY_OF_WEEK));
+            String month = getMonth(userSelection.get(Calendar.MONTH));
+            String endDateString = dayOfWeek + ", " + month + " " + Integer.toString(userSelection.get(Calendar.DAY_OF_MONTH)) + ", " + Integer.toString(2015);
             endDate.setText(endDateString);
             selectedJob.save();
         }
@@ -133,8 +132,6 @@ public class AddTimeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_time);
-        b1 = (ImageButton) findViewById(R.id.addTimeButton);
-        b1.setOnClickListener(myhandler1);
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
@@ -170,9 +167,9 @@ public class AddTimeActivity extends ActionBarActivity {
         TextView endDate = (TextView) findViewById(R.id.endDateTextView);
         startTime.setText(startTimeString);
         endTime.setText(startTimeString);
-        String dayOfWeek = getDay(Calendar.DAY_OF_WEEK);
-        String month = getMonth(Calendar.MONTH);
-        String startDateString = dayOfWeek + ", " + month + " " + Integer.toString(Calendar.DAY_OF_MONTH) + ", " + Integer.toString(2015);
+        String dayOfWeek = getDay(rightNow.get(Calendar.DAY_OF_WEEK));
+        String month = getMonth(rightNow.get(Calendar.MONTH));
+        String startDateString = dayOfWeek + ", " + month + " " + Integer.toString(rightNow.get(Calendar.DAY_OF_MONTH)) + ", " + Integer.toString(2015);
         startDate.setText(startDateString);
         endDate.setText(startDateString);
 
@@ -233,14 +230,7 @@ public class AddTimeActivity extends ActionBarActivity {
         Drawer.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
     }
-    View.OnClickListener myhandler1 = new View.OnClickListener() {
-        public void onClick(View v) {
-            selectedJob.add_time();
-            selectedJob.save();
-            Intent intent = new Intent(AddTimeActivity.this, CalendarActivity.class);
-            startActivity(intent);
-        }
-    };
+
 
     public void onClickStartTime(View v){
         new TimePickerDialog(AddTimeActivity.this, timeStart, userSelection

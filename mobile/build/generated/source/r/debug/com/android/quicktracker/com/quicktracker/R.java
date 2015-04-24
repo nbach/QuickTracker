@@ -1958,7 +1958,7 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f0b003e;
         public static final int addJobButton=0x7f0b0080;
         public static final int addTaskButton=0x7f0b007d;
-        public static final int addTimeButton=0x7f0b007a;
+        public static final int addTimeButton=0x7f0b007b;
         public static final int addressEditText=0x7f0b0064;
         public static final int addressLinearLayout=0x7f0b0062;
         public static final int addressTextView=0x7f0b0063;
@@ -2073,7 +2073,7 @@ containing a value of this type.
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
         public static final int wednesday=0x7f0b0038;
-        public static final int weekView=0x7f0b007b;
+        public static final int weekView=0x7f0b007a;
         public static final int weeklyRadioButton=0x7f0b006d;
         public static final int welcomeLayout=0x7f0b007e;
         public static final int withText=0x7f0b001f;

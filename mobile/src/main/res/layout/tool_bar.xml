@@ -2,7 +2,7 @@
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#00B2EE"
+    android:background="#2196F3"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:paddingTop="24dp"
     android:elevation="4dp"

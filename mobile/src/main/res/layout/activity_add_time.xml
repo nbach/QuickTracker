@@ -93,23 +93,6 @@
 
 
 
-
-        <ImageButton
-            android:id="@+id/addTimeButton"
-            style="@style/AppTheme2"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/circle"
-            android:elevation="5dp"
-            android:src="@drawable/ic_check" />
-
-
-
-
     </RelativeLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView"
