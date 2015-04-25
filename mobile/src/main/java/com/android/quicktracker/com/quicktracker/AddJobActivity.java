@@ -94,9 +94,11 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
         if(editPosition != -1){
             Jobs tempJob = Jobs.jobList.get(editPosition);
             EditText taskEdit = (EditText) findViewById(R.id.jobNameEditText);
-            EditText addressEdit = (EditText) findViewById(R.id.addressEditText);
+            EditText streetEdit = (EditText) findViewById(R.id.streetEditText);
+            EditText cityEdit = (EditText) findViewById(R.id.cityEditText);
             taskEdit.setText(tempJob.get_name());
-            addressEdit.setText(tempJob.get_address());
+            streetEdit.setText(tempJob.get_address());
+            cityEdit.setText(tempJob.get_address());
         }
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
@@ -160,9 +162,12 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
 
     public void addJob(){
         EditText taskEdit = (EditText) findViewById(R.id.jobNameEditText);
-        EditText addressEdit = (EditText) findViewById(R.id.addressEditText);
+        EditText streetEdit = (EditText) findViewById(R.id.streetEditText);
+        EditText cityEdit = (EditText) findViewById(R.id.cityEditText);
         String taskName = taskEdit.getText().toString().trim();
-        String addressName = addressEdit.getText().toString().trim();
+        String streetName = streetEdit.getText().toString().trim();
+        String cityName = cityEdit.getText().toString().trim();
+        String addressName = streetName + ", " + cityName;
         if (editPosition != -1){
                 Jobs currentJob = Jobs.jobList.get(editPosition);
                 currentJob.set_name(taskName);

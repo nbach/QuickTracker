@@ -1,5 +1,8 @@
 <component name="libraryTable">
   <library name="snackbar-2.10.7">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.nispok/snackbar/2.10.7/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.nispok/snackbar/2.10.7/res" />
       <root url="jar://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.nispok/snackbar/2.10.7/classes.jar!/" />

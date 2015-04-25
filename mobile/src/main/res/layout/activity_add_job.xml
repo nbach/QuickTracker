@@ -45,11 +45,18 @@
             android:paddingTop="30dp">
 
             <EditText
-                android:id="@+id/addressEditText"
+                android:id="@+id/streetEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address"
+                android:hint="Street"
                 android:inputType="textPostalAddress" />
+            <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/streetEditText"
+            android:hint="City"
+            android:inputType="textPostalAddress" />
         </LinearLayout>
 
         <LinearLayout
