@@ -1,9 +1,11 @@
 package com.android.quicktracker.com.quicktracker;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -25,6 +27,12 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.location.Geofence;
+import com.nispok.snackbar.Snackbar;
+import com.nispok.snackbar.SnackbarManager;
+import com.nispok.snackbar.enums.SnackbarType;
+import com.nispok.snackbar.listeners.ActionClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,15 +56,15 @@ public class JobDetailsActivity extends ActionBarActivity {
     ActionBarDrawerToggle mDrawerToggle;
     ImageButton b1;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Toast.makeText(this, Integer.toString(AddJobActivity.mGeofenceList.size()), Toast.LENGTH_LONG).show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job_details);
         mListView = (ListView) findViewById(R.id.jobDetailListView);
         b1 = (ImageButton) findViewById(R.id.addTaskButton);
         b1.setOnClickListener(myhandler1);
-        mAdapterJob = new MyCustomAdapter();
+        mAdapterJob = new MyCustomAdapter(this);
         mListView.setAdapter(mAdapterJob);
 
 
@@ -183,6 +191,7 @@ public class JobDetailsActivity extends ActionBarActivity {
     View.OnClickListener myhandler1 = new View.OnClickListener() {
         public void onClick(View v) {
             Intent intent = new Intent(JobDetailsActivity.this, AddJobActivity.class);
+            intent.putExtra("callingActivity", getBaseContext().toString());
             startActivity(intent);
         }
     };
@@ -191,9 +200,11 @@ public class JobDetailsActivity extends ActionBarActivity {
 
         private List<Jobs> mData = Jobs.listAll(Jobs.class);
         private LayoutInflater mInflater;
+        private Context mContext;
 
-        public MyCustomAdapter() {
+        public MyCustomAdapter(Context context) {
             mInflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            mContext = context;
         }
 
         public void addItem(final Jobs item) {
@@ -229,6 +240,7 @@ public class JobDetailsActivity extends ActionBarActivity {
         public View getView(final int position, View convertView, ViewGroup parent) {
             ViewHolder holder = null;
             int type = getItemViewType(position);
+
             if (convertView == null) {
                 holder = new ViewHolder();
                 convertView = mInflater.inflate(R.layout.job_detail_row, null);
@@ -248,16 +260,38 @@ public class JobDetailsActivity extends ActionBarActivity {
                     adb.setMessage("Are you sure you want to delete " + mData.get(position).get_name().toString().trim());
                     final int positionToRemove = position;
                     adb.setNegativeButton("Cancel", null);
-                    adb.setPositiveButton("Ok", new AlertDialog.OnClickListener() {
+                    adb.setPositiveButton("Delete", new AlertDialog.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
+                            final Jobs revertDelete = mData.get(positionToRemove);
+                            final Geofence revertFence = AddJobActivity.mGeofenceList.get(positionToRemove);
+
+
                             mData.get(positionToRemove).delete();
                             AddJobActivity.mGeofenceList.remove(positionToRemove);
                             mData.remove(positionToRemove);
-
                             if (mData.isEmpty()){
                                 mData.add(new Jobs("None", "None"));
                             }
                             notifyDataSetChanged();
+
+                                SnackbarManager.show(
+                                        Snackbar.with(getApplicationContext()) // context
+                                                .text("Job Deleted")
+                                                .actionLabel("Undo")
+                                                .actionColor(Color.YELLOW)
+                                                .actionListener(new ActionClickListener() {
+                                                    @Override
+                                                    public void onActionClicked(Snackbar snackbar) {
+                                                        AddJobActivity.mGeofenceList.add(revertFence);
+                                                        if (mData.get(0).get_name().equals("None")) mData.remove(0);
+                                                        Jobs newJob = new Jobs(revertDelete);
+                                                        newJob.save();
+                                                        mData.add(revertDelete);
+                                                        notifyDataSetChanged();
+                                                    }
+                                                })
+                                        , (Activity) mContext);
+
                         }});
                     adb.show();
                 }

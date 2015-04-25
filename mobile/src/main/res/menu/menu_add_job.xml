@@ -3,5 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.android.quicktracker.com.quicktracker.AddJobActivity">
 
-
+    <item android:id="@+id/save_add_time"
+        android:title="SAVE"
+        android:orderInCategory="250"
+        app:showAsAction="always|withText"
+        />
 </menu>

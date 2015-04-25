@@ -162,12 +162,12 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
+        String id = item.toString();
         switch (id){
-            case 0:
+            case "Go To Today":
                 mWeekView.goToToday();
                 return true;
-            case 1:
+            case "Day View":
                 if (mWeekViewType != TYPE_DAY_VIEW) {
                     item.setChecked(!item.isChecked());
                     mWeekViewType = TYPE_DAY_VIEW;
@@ -179,19 +179,19 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
                     mWeekView.setEventTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, getResources().getDisplayMetrics()));
                 }
                 return true;
-            case 2:
+            case "Five Day View":
                 if (mWeekViewType != TYPE_THREE_DAY_VIEW) {
                     item.setChecked(!item.isChecked());
                     mWeekViewType = TYPE_THREE_DAY_VIEW;
-                    mWeekView.setNumberOfVisibleDays(3);
+                    mWeekView.setNumberOfVisibleDays(5);
 
 
-                    mWeekView.setColumnGap((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
+                    mWeekView.setColumnGap((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1, getResources().getDisplayMetrics()));
                     mWeekView.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, getResources().getDisplayMetrics()));
                     mWeekView.setEventTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, getResources().getDisplayMetrics()));
                 }
                 return true;
-            case 3:
+            case "Week View":
                 if (mWeekViewType != TYPE_WEEK_VIEW) {
                     item.setChecked(!item.isChecked());
                     mWeekViewType = TYPE_WEEK_VIEW;
@@ -261,6 +261,6 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
 
     @Override
     public void onEventLongPress(WeekViewEvent event, RectF eventRect) {
-        Toast.makeText(CalendarActivity.this, "Long pressed event: " + event.getName(), Toast.LENGTH_SHORT).show();
+
     }
 }

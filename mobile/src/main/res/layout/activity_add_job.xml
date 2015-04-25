@@ -1,5 +1,4 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     android:id="@+id/DrawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,24 +26,12 @@
             android:orientation="horizontal"
             android:paddingTop="45sp">
 
-            <TextView
-                android:id="@+id/jobNameTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:text="Job Name"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
             <EditText
                 android:id="@+id/jobNameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/pushNotificationsTextView"
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="37dp"
-                android:hint="Enter Job Name..." />
+                android:hint="Job Name" />
         </LinearLayout>
 
         <LinearLayout
@@ -57,23 +44,11 @@
             android:orientation="horizontal"
             android:paddingTop="30dp">
 
-            <TextView
-                android:id="@+id/addressTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:text="Address"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
             <EditText
                 android:id="@+id/addressEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="42dp"
-                android:layout_marginStart="37dp"
-                android:hint="Enter Address..."
+                android:hint="Address"
                 android:inputType="textPostalAddress" />
         </LinearLayout>
 
@@ -198,27 +173,6 @@
                 android:id="@+id/colorSpinner"
                 android:gravity="center" />
 
-
-
-
-
-
-        <ImageButton
-            android:id="@+id/OkBt"
-            style="@style/AppTheme2"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/circle"
-            android:elevation="5dp"
-            android:src="@drawable/ic_check" />
-
-
-
-
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
@@ -227,7 +181,7 @@
         android:layout_width="320dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:background="#00B2EE"
+        android:background="#2196F3"
         android:scrollbars="vertical">
 
     </android.support.v7.widget.RecyclerView>

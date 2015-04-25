@@ -54,7 +54,7 @@
             android:layout_width="320dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
-            android:background="#00B2EE"
+            android:background="#2196F3"
             android:scrollbars="vertical">
 
         </android.support.v7.widget.RecyclerView>

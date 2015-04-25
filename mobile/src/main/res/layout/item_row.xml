@@ -17,7 +17,7 @@
         android:paddingTop="7dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="20dp"
-        android:background="#00B2EE"
+        android:background="#2196F3"
         android:id="@+id/rowTextView"
         android:textColor="#ffffff"
         android:textStyle="bold"/>

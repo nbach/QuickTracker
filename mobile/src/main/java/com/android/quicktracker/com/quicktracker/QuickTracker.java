@@ -34,7 +34,6 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quick_tracker);
-
         b1 = (Button) findViewById(R.id.addJobButton);
         b2 = (Button) findViewById(R.id.learnMoreButton);
         b1.setOnClickListener(myhandler1);
@@ -63,40 +62,25 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
         return true;
     }
     public void onResult(Status status) {
-        if (status.isSuccess()) {
-            Toast.makeText(this, "LOLSUCCESS", Toast.LENGTH_LONG).show();
-
-            // Update the UI. Adding geofences enables the Remove Geofences button, and removing
-            // geofences enables the Add Geofences button.
-
-
-        }
     }
 
     private GeofencingRequest getGeofencingRequest() {
         GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
         builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
-        //Toast.makeText(this, "TEST1", Toast.LENGTH_LONG).show();
         builder.addGeofences(AddJobActivity.mGeofenceList);
-        //Toast.makeText(this, "TEST2", Toast.LENGTH_LONG).show();
         return builder.build();
     }
 
     private PendingIntent getGeofencePendingIntent() {
-        // Reuse the PendingIntent if we already have it.
         if (AddJobActivity.mGeofencePendingIntent != null) {
             return AddJobActivity.mGeofencePendingIntent;
         }
         Intent intent = new Intent(this, GeofenceTransitionsIntentService.class);
-        // We use FLAG_UPDATE_CURRENT so that we get the same pending intent back when
-        // calling addGeofences() and removeGeofences().
         return PendingIntent.getService(this, 0, intent, PendingIntent.
                 FLAG_UPDATE_CURRENT);
     }
     @Override
     public void onConnected(Bundle connectionHint) {
-
-        //Toast.makeText(this, Integer.toString(AddJobActivity.mGeofenceList.size()), Toast.LENGTH_LONG).show();
         Jobs.jobList = Jobs.listAll(Jobs.class);
         for (int i=0; i<Jobs.jobList.size(); i++) {
             if (Jobs.jobList.get(i).get_address()!=null && Jobs.jobList.get(i).get_name()!=null && getLocationFromAddress(Jobs.jobList.get(i).get_address())!=null){
@@ -135,9 +119,6 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
 
 
         AddJobActivity.mGoogleApiClient.connect();
-
-
-        //Toast.makeText(this, "CONNECT", Toast.LENGTH_LONG).show();
     }
 
     public void onConnectionSuspended(int cause) {
@@ -150,15 +131,10 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
     @Override
     protected void onStop() {
         super.onStop();
-        //Toast.makeText(this, "STOP", Toast.LENGTH_LONG).show();
-
     }
 
     @Override
     public void onConnectionFailed(ConnectionResult result) {
-
-        Toast.makeText(this, "LOL", Toast.LENGTH_SHORT).show();
-
     }
 
     @Override

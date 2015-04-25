@@ -2,6 +2,7 @@ package com.android.quicktracker.com.quicktracker;
 
 import android.app.Activity;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Outline;
@@ -46,6 +47,8 @@ import android.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.plus.Plus;
+import com.nispok.snackbar.Snackbar;
+import com.nispok.snackbar.SnackbarManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,8 +83,8 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
     RecyclerView.Adapter mAdapter;                        // Declaring Adapter For Recycler View
     RecyclerView.LayoutManager mLayoutManager;            // Declaring Layout Manager as a linear layout manager
     DrawerLayout Drawer;                                  // Declaring DrawerLayout
-    ImageButton b1;
-    ActionBarDrawerToggle mDrawerToggle;                  // Declaring Action Bar Drawer Toggle
+    ActionBarDrawerToggle mDrawerToggle;
+    Context mContext;// Declaring Action Bar Drawer Toggle
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,11 +100,6 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
         }
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
-        b1 = (ImageButton) findViewById(R.id.OkBt);
-        b1.setOnClickListener(myhandler1);
-
-
-
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView); // Assigning the RecyclerView Object to the xml View
@@ -149,31 +147,24 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                // code here will execute once the drawer is opened( As I dont want anything happened whe drawer is
-                // open I am not going to put anything here)
             }
 
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
-                // Code here will execute once drawer is closed
             }
-
-
-
-        }; // Drawer Toggle Object Made
-        Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
+        };
+        Drawer.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
     }
 
-    View.OnClickListener myhandler1 = new View.OnClickListener() {
-        public void onClick(View v) {
-            if (editPosition != -1){
+    public void addJob(){
+        EditText taskEdit = (EditText) findViewById(R.id.jobNameEditText);
+        EditText addressEdit = (EditText) findViewById(R.id.addressEditText);
+        String taskName = taskEdit.getText().toString().trim();
+        String addressName = addressEdit.getText().toString().trim();
+        if (editPosition != -1){
                 Jobs currentJob = Jobs.jobList.get(editPosition);
-                EditText taskEdit = (EditText) findViewById(R.id.jobNameEditText);
-                EditText addressEdit = (EditText) findViewById(R.id.addressEditText);
-                String taskName = taskEdit.getText().toString().trim();
-                String addressName = addressEdit.getText().toString().trim();
                 currentJob.set_name(taskName);
                 currentJob.set_address(addressName);
                 currentJob.save();
@@ -181,11 +172,8 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
                 Intent intent = new Intent(AddJobActivity.this, JobDetailsActivity.class);
                 startActivity(intent);
             }
-            else {
-                EditText taskEdit = (EditText) findViewById(R.id.jobNameEditText);
-                EditText addressEdit = (EditText) findViewById(R.id.addressEditText);
-                String taskName = taskEdit.getText().toString().trim();
-                String addressName = addressEdit.getText().toString().trim();
+
+         if (validateRequiredFields(taskName, addressName) && getLocationFromAddress(addressName) != null){
                 Jobs job = new Jobs(taskName, addressName);
                 job.save();
                 Jobs.jobList = Jobs.listAll(Jobs.class);
@@ -207,28 +195,20 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
                         getGeofencePendingIntent()
                 );
                 Intent intent = new Intent(AddJobActivity.this, JobDetailsActivity.class);
+
                 startActivity(intent);
             }
         }
-    };
+
 
     public void onResult(Status status) {
-        if (status.isSuccess()) {
-            Toast.makeText(this, "LOLSUCCESS", Toast.LENGTH_LONG).show();
 
-            // Update the UI. Adding geofences enables the Remove Geofences button, and removing
-            // geofences enables the Add Geofences button.
-
-
-        }
     }
 
     private GeofencingRequest getGeofencingRequest() {
         GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
         builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
-        //Toast.makeText(this, "TEST1", Toast.LENGTH_LONG).show();
         builder.addGeofences(mGeofenceList);
-        //Toast.makeText(this, "TEST2", Toast.LENGTH_LONG).show();
         return builder.build();
     }
 
@@ -244,13 +224,8 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
     }
     @Override
     public void onConnected(Bundle connectionHint) {
-
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-       //Toast.makeText(this, "onConnceted", Toast.LENGTH_LONG).show();
-
-
-        Toast.makeText(this, Integer.toString(mGeofenceList.size()), Toast.LENGTH_LONG).show();
-
+        Toast.makeText(this, Integer.toString(Jobs.listAll(Jobs.class).size()), Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -261,15 +236,10 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API)
                 .build();
-
-
-
         mGoogleApiClient.connect();
-        //Toast.makeText(this, "CONNECT", Toast.LENGTH_LONG).show();
     }
 
     public void onConnectionSuspended(int cause) {
-        //Toast.makeText(this, "SUSPENDED", Toast.LENGTH_LONG).show();
         mGoogleApiClient.connect();
     }
 
@@ -277,13 +247,10 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
     @Override
     protected void onStop() {
         super.onStop();
-        //Toast.makeText(this, "STOP", Toast.LENGTH_LONG).show();
-
     }
 
     @Override
     public void onConnectionFailed(ConnectionResult result) {
-        Toast.makeText(this, "LOL", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -314,7 +281,6 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
     }
 
     public LatLng getLocationFromAddress(String strAddress) {
-
         Geocoder coder = new Geocoder(this);
         List<Address> address;
         LatLng p1 = null;
@@ -338,10 +304,26 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
         return p1;
     }
 
+    public boolean validateRequiredFields(String task, String address){
+        if ((task.equals("") || task == null) && (address.equals("") || address == null)){
+            Toast.makeText(this, "Please enter the required fields", Toast.LENGTH_LONG).show();
+            return false;
+        }
+        if (task.equals("") || task == null){
+            Toast.makeText(this, "Please enter a job name", Toast.LENGTH_LONG).show();
+            return false;
+        }
+        if (address.equals("") || address == null || getLocationFromAddress(address) == null){
+            Toast.makeText(this, "Please enter a valid address", Toast.LENGTH_LONG).show();
+            return false;
+        }
+        return true;
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_job_details, menu);
+        getMenuInflater().inflate(R.menu.menu_add_job, menu);
         return true;
     }
 
@@ -350,9 +332,11 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
 
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+
+        if (id == R.id.save_add_time) {
+
+            addJob();
+
         }
 
         return super.onOptionsItemSelected(item);

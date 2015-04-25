@@ -8,35 +8,35 @@
         android:id="@+id/jobDetailRowTextView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:layout_centerVertical="true"
         android:textSize="30sp"
+        android:layout_toRightOf="@+id/editButton"
          />
 
     <ImageButton
         android:id="@+id/deleteButton"
-        style="@style/AppTheme2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
         android:layout_centerVertical="true"
-        android:background="@drawable/circle_delete"
         android:elevation="5dp"
-        android:src="@drawable/ic_action_name2" />
+        android:background="@null"
+        android:src="@drawable/ic_delete_gray" />
 
     <ImageButton
         android:id="@+id/editButton"
-        style="@style/AppTheme2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_toLeftOf="@+id/deleteButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:background="@null"
+        android:layout_marginRight="5dp"
         android:layout_centerVertical="true"
-        android:background="@drawable/circle_edit"
         android:elevation="5dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
         android:src="@drawable/ic_edit" />
 </RelativeLayout>

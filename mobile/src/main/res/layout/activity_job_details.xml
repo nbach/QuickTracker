@@ -28,11 +28,12 @@
             style="@style/AppTheme2"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:background="@drawable/circle"
+            android:stateListAnimator="@drawable/button_anim"
             android:elevation="5dp"
             android:src="@drawable/ic_plus" />
 
@@ -43,7 +44,7 @@
         android:layout_width="320dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:background="#00B2EE"
+        android:background="#2196F3"
         android:scrollbars="vertical">
 
     </android.support.v7.widget.RecyclerView>

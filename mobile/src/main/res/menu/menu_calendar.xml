@@ -2,5 +2,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.android.quicktracker.com.quicktracker.CalendarActivity">
-
+    <item android:id="@+id/action_today"
+        android:title="Go To Today"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/action_day_view"
+            android:title="Day View"
+            android:orderInCategory="100"
+            app:showAsAction="never"/>
+        <item android:id="@+id/action_three_day_view"
+            android:title="Five Day View"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:checked="true"/>
+        <item android:id="@+id/action_week_view"
+            android:title="Week View"
+            android:orderInCategory="100"
+            app:showAsAction="never"/>
+    </group>
 </menu>

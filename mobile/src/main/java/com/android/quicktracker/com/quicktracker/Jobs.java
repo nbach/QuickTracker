@@ -49,6 +49,11 @@ public class Jobs extends SugarRecord<Jobs> {
         _end_hours = endHour;
         _end_minutes = endMinute;
     }
+    public Jobs(Jobs toCopy){
+        _name = toCopy.get_name();
+        _address = toCopy.get_address();
+        _time = toCopy.get_time_string();
+    }
 
     /* Getters and Setters */
     public String get_name() {
