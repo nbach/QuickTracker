@@ -160,6 +160,13 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/colorLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timesheetLinearLayout"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
 
             <TextView
                 android:id="@+id/colorTextView"
@@ -176,9 +183,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/colorTextView"
-
                 android:id="@+id/colorSpinner"
-                android:gravity="center" />
+                android:gravity="center"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/color_array"
+                android:prompt="@string/color_prompt"/>
+        </LinearLayout>
 
     </RelativeLayout>
 

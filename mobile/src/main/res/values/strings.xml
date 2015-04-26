@@ -11,7 +11,9 @@
     <string name="title_activity_nav_drawer_adapter">NavDrawerAdapter</string>
     <string name="title_activity_calendar">CalendarActivity</string>
     <string name="title_activity_add_time">AddTimeActivity</string>
+    <string name="color_prompt">Color</string>
     <string-array name="color_array">
+
         <item>Red</item>
         <item>Blue</item>
         <item>Green</item>
