@@ -10,7 +10,10 @@
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
         android:layout_centerVertical="true"
-        android:textSize="30sp"
+        android:textSize="37sp"
+        android:ellipsize="end"
+        android:maxEms="11"
+        android:singleLine="true"
         android:layout_toRightOf="@+id/editButton"
          />
 
