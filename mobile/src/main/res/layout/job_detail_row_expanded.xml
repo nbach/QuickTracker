@@ -15,7 +15,7 @@
         android:maxEms="11"
         android:singleLine="true"
         android:layout_toRightOf="@+id/editButton"
-         />
+        />
 
     <ImageButton
         android:id="@+id/deleteButton"
@@ -42,4 +42,5 @@
         android:cropToPadding="false"
         android:scaleType="fitXY"
         android:src="@drawable/ic_edit" />
+
 </RelativeLayout>
