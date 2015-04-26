@@ -2152,9 +2152,10 @@ containing a value of this type.
         public static final int header=0x7f04001c;
         public static final int item_row=0x7f04001d;
         public static final int job_detail_row=0x7f04001e;
-        public static final int sb__template=0x7f04001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f040020;
-        public static final int tool_bar=0x7f040021;
+        public static final int job_detail_row_expanded=0x7f04001f;
+        public static final int sb__template=0x7f040020;
+        public static final int support_simple_spinner_dropdown_item=0x7f040021;
+        public static final int tool_bar=0x7f040022;
     }
     public static final class menu {
         public static final int menu_add_job=0x7f100000;
