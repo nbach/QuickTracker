@@ -12,6 +12,12 @@
     <string name="title_activity_calendar">CalendarActivity</string>
     <string name="title_activity_add_time">AddTimeActivity</string>
     <string name="color_prompt">Color</string>
+    <string name="per_hour"> Per Hour</string>
+    <string name="this_week"> Hours this week</string>
+    <string name="earned_this_week"> Earned this week</string>
+    <string name="avg">Averages:  </string>
+    <string name="per_day">  Hours Per Day</string>
+    <string name="per_week">  Hours Per Week</string>
     <string-array name="color_array">
 
         <item>Red</item>
