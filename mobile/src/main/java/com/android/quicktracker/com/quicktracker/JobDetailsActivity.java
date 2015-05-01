@@ -279,6 +279,7 @@ public class JobDetailsActivity extends ActionBarActivity {
                                                 .text("Job Deleted")
                                                 .actionLabel("Undo")
                                                 .actionColor(Color.YELLOW)
+                                                
                                                 .actionListener(new ActionClickListener() {
                                                     @Override
                                                     public void onActionClicked(Snackbar snackbar) {

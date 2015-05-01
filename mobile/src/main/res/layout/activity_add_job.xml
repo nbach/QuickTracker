@@ -8,8 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
 
         <include
@@ -17,90 +16,125 @@
             layout="@layout/tool_bar"></include>
 
         <LinearLayout
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_below="@+id/tool_bar"
             android:id="@+id/jobNameLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
             android:orientation="horizontal"
-            android:paddingTop="45sp">
+            android:paddingTop="15sp">
 
             <ImageView
+                android:id="@+id/jobTitleImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobTitleImage"
-                android:src="@drawable/ic_clipboard_gray"
-                />
+                android:src="@drawable/ic_clipboard_gray" />
+
             <EditText
                 android:id="@+id/jobNameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/jobTitleImage"
                 android:layout_alignTop="@+id/pushNotificationsTextView"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/jobTitleImage"
                 android:background="@null"
                 android:hint="Job Name" />
         </LinearLayout>
+
         <View
+            android:id="@+id/firstDivider"
             android:layout_width="fill_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="18dp"
-            android:paddingTop="20dp"
             android:layout_height="1dip"
-            android:background="#000000"
             android:layout_below="@+id/jobNameLinearLayout"
-            android:id="@+id/firstDivider"/>
+            android:layout_marginLeft="53dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffd3d3d3" />
 
 
         <LinearLayout
             android:id="@+id/addressLinearLayout"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/firstDivider"
-            android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="15dp"
+
+            android:orientation="horizontal"
+
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/addressImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_gray" />
+
             <EditText
-                android:id="@+id/streetEditText"
+                android:id="@+id/addressEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/addressImage"
+                android:background="@null"
                 android:hint="Street"
                 android:inputType="textPostalAddress" />
-            <EditText
-            android:id="@+id/cityEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/streetEditText"
-            android:layout_marginTop="10dp"
-            android:hint="City"
-            android:inputType="textPostalAddress" />
         </LinearLayout>
 
+        <View
+            android:id="@+id/secondDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/addressLinearLayout"
+            android:layout_marginLeft="53dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffd3d3d3" />
+
         <LinearLayout
-            android:id="@+id/payLinearLayout"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:id="@+id/payWrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/addressLinearLayout"
-            android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:layout_below="@+id/secondDivider"
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/payEditText"
+            <LinearLayout
+                android:id="@+id/payLinearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="Pay Rate"
-                android:inputType="text" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/payImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_money" />
+
+                <EditText
+                    android:id="@+id/payEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/payImage"
+                    android:background="@null"
+                    android:hint="Pay Rate"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/payFirstRow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="51dp"
                 android:orientation="horizontal">
 
                 <RadioGroup
@@ -120,30 +154,57 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
                         android:text="Salary" />
                 </RadioGroup>
+
             </LinearLayout>
 
 
-
-
         </LinearLayout>
+
+        <View
+            android:id="@+id/thirdDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/payWrapper"
+            android:layout_marginLeft="53dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffd3d3d3" />
 
         <LinearLayout
             android:id="@+id/timesheetLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/payLinearLayout"
+            android:layout_below="@+id/thirdDivider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical"
-            android:paddingTop="20dp">
+            android:paddingTop="15dp">
 
-            <EditText
-                android:id="@+id/timesheetEditText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:hint="Next Timesheet Due Date"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:id="@+id/timesheetFirstRow">
+                <ImageView
+                    android:id="@+id/timesheetImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_calendar_gray" />
+
+                <EditText
+                    android:id="@+id/timesheetEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/timesheetImage"
+                    android:background="@null"
+                    android:hint="Timesheet Due Date"
+                    android:inputType="textPostalAddress" />
+
+            </LinearLayout>
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -155,7 +216,7 @@
                     android:id="@+id/weeklyRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginLeft="45dp"
                     android:text="Weekly" />
 
                 <RadioButton
@@ -167,6 +228,16 @@
             </RadioGroup>
 
         </LinearLayout>
+        <View
+            android:id="@+id/fourthDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/timesheetLinearLayout"
+            android:layout_marginLeft="53dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffd3d3d3" />
+
 
         <LinearLayout
             android:id="@+id/colorLinearLayout"
@@ -178,24 +249,23 @@
 
             <TextView
                 android:id="@+id/colorTextView"
-                android:layout_below="@+id/timesheetLinearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:layout_below="@+id/timesheetLinearLayout"
                 android:gravity="center"
-                android:text="What color would you like this job to appear on the calendar?"
-            />
+                android:text="What color would you like this job to appear on the calendar?" />
 
 
             <Spinner
+                android:id="@+id/colorSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/colorTextView"
-                android:id="@+id/colorSpinner"
-                android:gravity="center"
                 android:drawSelectorOnTop="true"
                 android:entries="@array/color_array"
-                android:prompt="@string/color_prompt"/>
+                android:gravity="center"
+                android:prompt="@string/color_prompt" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -52,6 +52,7 @@ public class AddTimeActivity extends ActionBarActivity {
     ActionBarDrawerToggle mDrawerToggle;
     final Calendar userSelection = Calendar.getInstance();
     final Calendar defaultSelection = Calendar.getInstance();
+
     DatePickerDialog.OnDateSetListener dateStart = new DatePickerDialog.OnDateSetListener() {
 
        @Override
@@ -279,7 +280,7 @@ public class AddTimeActivity extends ActionBarActivity {
     }
 
     public void onTouchDrawer(final int position) {
-        int lastMenu = 3;
+        int lastMenu = 0;
         final int JOB_DETAILS_POSITION = 1;
         final int CALENDAR_POSITION = 2;
         final int SETTINGS_POSITION = 3;
@@ -375,4 +376,5 @@ public class AddTimeActivity extends ActionBarActivity {
                 return "";
         }
     }
+
 }
