@@ -225,7 +225,6 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
     @Override
     public void onConnected(Bundle connectionHint) {
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        Toast.makeText(this, Integer.toString(Jobs.listAll(Jobs.class).size()), Toast.LENGTH_LONG).show();
     }
 
     @Override

@@ -240,6 +240,10 @@ public class JobDetailsActivity extends ActionBarActivity {
         public View getView(final int position, View convertView, ViewGroup parent) {
             ViewHolder holder = null;
             int type = getItemViewType(position);
+            if (mData.isEmpty()){
+                mData.add(new Jobs("None", "None"));
+                return null;
+            }
 
             if (convertView == null) {
                 holder = new ViewHolder();
