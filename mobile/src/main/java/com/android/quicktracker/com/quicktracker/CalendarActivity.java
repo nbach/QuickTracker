@@ -1,5 +1,9 @@
 package com.android.quicktracker.com.quicktracker;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.RectF;
@@ -21,6 +25,10 @@ import android.widget.Toast;
 
 import com.alamkanak.weekview.WeekView;
 import com.alamkanak.weekview.WeekViewEvent;
+import com.google.android.gms.location.Geofence;
+import com.nispok.snackbar.Snackbar;
+import com.nispok.snackbar.SnackbarManager;
+import com.nispok.snackbar.listeners.ActionClickListener;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -35,7 +43,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
     private static final int TYPE_THREE_DAY_VIEW = 2;
     private static final int TYPE_WEEK_VIEW = 3;
     private int mWeekViewType = TYPE_WEEK_VIEW;
-
+    private Context mContext = this;
 
     String TITLES[] = {"Job Details","Calendar","Settings"};
     int ICONS[] = {R.drawable.ic_clipboard,R.drawable.ic_calendar,R.drawable.ic_settings};
@@ -258,11 +266,33 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
-        Toast.makeText(CalendarActivity.this, "Clicked " + event.getName(), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(CalendarActivity.this, AddTimeActivity.class);
+        startActivity(intent);
     }
 
     @Override
     public void onEventLongPress(WeekViewEvent event, RectF eventRect) {
+        AlertDialog.Builder adb=new AlertDialog.Builder(CalendarActivity.this);
+        adb.setMessage("Are you sure you want to delete this event?");
+        adb.setNegativeButton("Cancel", null);
+        adb.setPositiveButton("Delete", new AlertDialog.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                    SnackbarManager.show(
+                        Snackbar.with(getApplicationContext()) // context
+                                .text("Job Deleted")
+                                .actionLabel("Undo")
+                                .actionColor(Color.YELLOW)
 
-    }
+                                .actionListener(new ActionClickListener() {
+                                    @Override
+                                    public void onActionClicked(Snackbar snackbar) {
+
+                                    }
+                                })
+                        , (Activity) mContext);
+
+            }});
+        adb.show();}
 }
+
+

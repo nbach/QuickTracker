@@ -17,76 +17,78 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_clipboard_gray"
+            android:src="@drawable/ic_clipboard_gray"
             android:id="@+id/jobImageView"
-            android:layout_marginTop="17dp"
-            android:layout_marginLeft="20dp"
-            android:height="8dp"
-            android:width="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
             android:layout_below="@+id/tool_bar"/>
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinner"
-            android:layout_marginTop="23dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
             android:layout_below="@+id/tool_bar"
             android:layout_toRightOf="@+id/jobImageView"
              />
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black"/>
+            android:id="@+id/firstDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/jobImageView"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffd3d3d3" />
 
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_time_gray"
+            android:src="@drawable/ic_clock_gray"
             android:id="@+id/timeImageView"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:height="8dp"
-            android:width="8dp"
-            android:layout_below="@+id/jobImageView"/>
+            android:layout_marginLeft="15dp"
+            android:paddingTop="15dp"
+            android:layout_below="@+id/firstDivider"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/fromTextView"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="15dp"
             android:text="From"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/jobImageView"
-            android:layout_below="@+id/jobImageView"
+            android:layout_below="@+id/firstDivider"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jobImageView"
+            android:layout_below="@+id/firstDivider"
             android:id="@+id/startDateTextView"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/fromTextView"
             android:onClick="onClickStartDate"
             android:clickable="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/jobImageView"
+            android:layout_below="@+id/firstDivider"
             android:id="@+id/startTimeTextView"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/startDateTextView"
             android:onClick="onClickStartTime"
             android:clickable="true"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/toTextView"
             android:text="To"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:layout_toRightOf="@+id/jobImageView"
             android:layout_below="@+id/startTimeTextView"
             />
@@ -96,7 +98,7 @@
             android:layout_below="@+id/startTimeTextView"
             android:id="@+id/endDateTextView"
             android:layout_marginLeft="31dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_toRightOf="@+id/toTextView"
             android:onClick="onClickEndDate"
             android:clickable="true"/>
@@ -106,7 +108,7 @@
             android:layout_below="@+id/startTimeTextView"
             android:id="@+id/endTimeTextView"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_toRightOf="@+id/endDateTextView"
             android:onClick="onClickEndTime"
             android:clickable="true"/>
