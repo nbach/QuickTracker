@@ -165,6 +165,8 @@ public class AddJobActivity extends ActionBarActivity implements ResultCallback<
         String addressName = addressEdit.getText().toString().trim();
         if (editPosition != -1){
                 Jobs currentJob = Jobs.jobList.get(editPosition);
+                currentJob.delete();
+                currentJob = new Jobs();
                 currentJob.set_name(taskName);
                 currentJob.set_address(addressName);
                 currentJob.save();

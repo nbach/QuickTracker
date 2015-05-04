@@ -22,6 +22,7 @@ import com.google.android.gms.location.GeofencingRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
 
+import java.util.Calendar;
 import java.util.List;
 
 
@@ -33,6 +34,10 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Jobs.listAll(Jobs.class) != null){
+            Intent intent = new Intent(QuickTracker.this, CalendarActivity.class);
+            startActivity(intent);
+        }
         setContentView(R.layout.activity_quick_tracker);
         b1 = (Button) findViewById(R.id.addJobButton);
         b2 = (Button) findViewById(R.id.learnMoreButton);

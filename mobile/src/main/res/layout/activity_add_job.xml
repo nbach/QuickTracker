@@ -238,35 +238,51 @@
             android:layout_marginTop="15dp"
             android:background="#ffd3d3d3" />
 
-
+<!--
         <LinearLayout
             android:id="@+id/colorLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/timesheetLinearLayout"
+            android:layout_below="@+id/fourthDivider"
             android:orientation="vertical"
-            android:paddingTop="20dp">
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:paddingTop="20dp">  layout_below to fourthDivider from timesheetLinearLayout -->
 
-            <TextView
-                android:id="@+id/colorTextView"
+          <!--  <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_below="@+id/timesheetLinearLayout"
-                android:gravity="center"
-                android:text="What color would you like this job to appear on the calendar?" />
+                android:id="@+id/colorFirstRow">
 
+                <ImageView
+                    android:id="@+id/colorImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     /> Added this to make a color image -->
+
+               <!-- <TextView
+                    android:id="@+id/colorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/jobImageView"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:text="What color would you like this job to appear on the calendar?" /> layout_below to fourthDivider from timesheetLinearLayout -->
+           <!-- </LinearLayout>
 
             <Spinner
                 android:id="@+id/colorSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/colorTextView"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="20dp"
                 android:drawSelectorOnTop="true"
                 android:entries="@array/color_array"
                 android:gravity="center"
                 android:prompt="@string/color_prompt" />
-        </LinearLayout>
+        </LinearLayout>-->
 
     </RelativeLayout>
 

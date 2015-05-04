@@ -47,6 +47,7 @@
         android:layout_marginTop="32dp"
         android:layout_alignRight="@+id/addJobButton"
         android:layout_alignEnd="@+id/addJobButton" />
+
 </RelativeLayout>
 
 

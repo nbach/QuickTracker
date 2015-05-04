@@ -1,6 +1,7 @@
 package com.android.quicktracker.com.quicktracker;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.RectF;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -24,6 +25,7 @@ import com.alamkanak.weekview.WeekViewEvent;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Random;
 
 
 public class CalendarActivity extends ActionBarActivity implements WeekView.MonthChangeListener,
@@ -37,7 +39,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
 
     String TITLES[] = {"Job Details","Calendar","Settings"};
     int ICONS[] = {R.drawable.ic_clipboard,R.drawable.ic_calendar,R.drawable.ic_settings};
-
+    private static int x = 0;
     private Toolbar toolbar;
     RecyclerView mRecyclerView;
     RecyclerView.Adapter mAdapter;
@@ -45,7 +47,6 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
     DrawerLayout Drawer;
     ImageButton b1;
     ActionBarDrawerToggle mDrawerToggle;
-
     public static WeekView mWeekView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,6 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         mWeekView.setOnEventClickListener(this);
         mWeekView.setMonthChangeListener(this);
         mWeekView.setEventLongPressListener(this);
-        onMonthChange(2015, 4);
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView);
         mRecyclerView.setHasFixedSize(true);
         mAdapter = new NavDrawerAdapter(TITLES, ICONS);
@@ -118,23 +118,26 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         mDrawerToggle.syncState();
     }
 
-    public static void onMonthChangeWrapper(int newYear, int newMonth){
-        new CalendarActivity().onMonthChange(newYear, newMonth);
-    }
+
 
     @Override
     public List<WeekViewEvent> onMonthChange(int newYear, int newMonth) {
-
-
         List<WeekViewEvent> events = new ArrayList<WeekViewEvent>();
         Jobs.jobList = Jobs.listAll(Jobs.class);
-        if (Jobs.jobList != null) {
+        if (Jobs.jobList != null && x<1) {
+            x++;
             for (int i = 0; i < Jobs.jobList.size(); i++) {
                 Jobs currentJob = Jobs.jobList.get(i);
+                Random rand = new Random();
+                int r = rand.nextInt(255);
+                int g = rand.nextInt(255);
+                int b = rand.nextInt(255);
+                int randomColor = Color.rgb(r, g, b);
                 ArrayList<int[]> currentJobEvents = currentJob._get_time();
                 if (currentJobEvents!=null && currentJobEvents.size() > 0) {
                     for (int j = 0; j < currentJobEvents.size(); j++) {
                         int[] times = currentJobEvents.get(j);
+
                         Calendar startTime = Calendar.getInstance();
                         startTime.set(Calendar.HOUR_OF_DAY, times[0]);
                         startTime.set(Calendar.MINUTE, times[1]);
@@ -148,8 +151,9 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
                             endTime.set(Calendar.DAY_OF_MONTH, times[7]);
                             endTime.set(Calendar.MONTH, times[8]);
                             endTime.set(Calendar.YEAR, times[9]);
-                            WeekViewEvent event = new WeekViewEvent(i, currentJob.get_name(), startTime, endTime);
-                            event.setColor(getResources().getColor(R.color.ColorPrimary));
+                            WeekViewEvent event = new WeekViewEvent(1, currentJob.get_name(), startTime, endTime);
+
+                            event.setColor(randomColor);
                             events.add(event);
 
                     }
@@ -172,8 +176,6 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
                     item.setChecked(!item.isChecked());
                     mWeekViewType = TYPE_DAY_VIEW;
                     mWeekView.setNumberOfVisibleDays(1);
-
-
                     mWeekView.setColumnGap((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
                     mWeekView.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, getResources().getDisplayMetrics()));
                     mWeekView.setEventTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 12, getResources().getDisplayMetrics()));
