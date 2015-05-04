@@ -3,14 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_add_job">AddJobActivity</string>
-    <string name="title_activity_job_details">JobDetailsActivity</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_add_job">Add Job</string>
+    <string name="title_activity_job_details">Job Details</string>
+    <string name="title_activity_settings">Settings</string>
     <string name="openDrawer">open</string>
     <string name="closeDrawer">close</string>
     <string name="title_activity_nav_drawer_adapter">NavDrawerAdapter</string>
-    <string name="title_activity_calendar">CalendarActivity</string>
-    <string name="title_activity_add_time">AddTimeActivity</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_add_time">Manually Add Time</string>
     <string name="color_prompt">Color</string>
     <string name="per_hour"> Per Hour</string>
     <string name="this_week"> Hours this week</string>
