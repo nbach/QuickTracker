@@ -29,4 +29,5 @@
         <item>Brown</item>
         <item>Black</item>
     </string-array>
+    <string name="title_activity_job_expanded_detail">JobExpandedDetailActivity</string>
 </resources>

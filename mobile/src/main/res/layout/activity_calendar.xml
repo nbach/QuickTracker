@@ -31,7 +31,7 @@
         app:noOfVisibleDays="5"
         app:headerRowBackgroundColor="#ffefefef"
         app:dayBackgroundColor="#ffffff"
-        app:todayBackgroundColor="#05000000"
+        app:todayBackgroundColor="#01000000"
         app:headerColumnBackground="#ffffffff"/>
 
     <ImageButton

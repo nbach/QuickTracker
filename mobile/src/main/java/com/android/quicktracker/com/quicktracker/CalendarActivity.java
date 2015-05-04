@@ -58,6 +58,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
     public static WeekView mWeekView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        x=0;
         Jobs.jobList = Jobs.listAll(Jobs.class);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
@@ -79,6 +80,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         mLayoutManager = new LinearLayoutManager(this);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
+
 
         final GestureDetector mGestureDetector = new android.view.GestureDetector(CalendarActivity.this, new GestureDetector.SimpleOnGestureListener() {
 
@@ -134,6 +136,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         Jobs.jobList = Jobs.listAll(Jobs.class);
         if (Jobs.jobList != null && x<1) {
             x++;
+            Toast.makeText(this, Integer.toString(x), Toast.LENGTH_LONG).show();
             for (int i = 0; i < Jobs.jobList.size(); i++) {
                 Jobs currentJob = Jobs.jobList.get(i);
                 Random rand = new Random();
@@ -159,7 +162,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
                             endTime.set(Calendar.DAY_OF_MONTH, times[7]);
                             endTime.set(Calendar.MONTH, times[8]);
                             endTime.set(Calendar.YEAR, times[9]);
-                            WeekViewEvent event = new WeekViewEvent(1, currentJob.get_name(), startTime, endTime);
+                            WeekViewEvent event = new WeekViewEvent(j, currentJob.get_name() + " from " + Integer.toString(times[0]) + ":" + Integer.toString(times[1]) +" to " + Integer.toString(times[2]) + ":" +Integer.toString(times[3]), startTime, endTime);
 
                             event.setColor(randomColor);
                             events.add(event);
@@ -226,6 +229,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
                 Toast.makeText(getBaseContext(), "Please create a job before trying to add hours", Toast.LENGTH_LONG).show();
                 return;
             }
+
             Intent intent = new Intent(CalendarActivity.this, AddTimeActivity.class);
             startActivity(intent);
         }
@@ -240,14 +244,17 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
 
         switch (lastMenu = position) {
             case JOB_DETAILS_POSITION:
+
                 Intent intent0 = new Intent(CalendarActivity.this, JobDetailsActivity.class);
                 startActivity(intent0);
                 break;
             case CALENDAR_POSITION:
+
                 Intent intent = new Intent(CalendarActivity.this, CalendarActivity.class);
                 startActivity(intent);
                 break;
             case SETTINGS_POSITION:
+
                 Intent intent2 = new Intent(CalendarActivity.this, SettingsActivity.class);
                 startActivity(intent2);
                 break;
@@ -266,6 +273,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
+        x=0;
         Intent intent = new Intent(CalendarActivity.this, AddTimeActivity.class);
         startActivity(intent);
     }
@@ -275,23 +283,7 @@ public class CalendarActivity extends ActionBarActivity implements WeekView.Mont
         AlertDialog.Builder adb=new AlertDialog.Builder(CalendarActivity.this);
         adb.setMessage("Are you sure you want to delete this event?");
         adb.setNegativeButton("Cancel", null);
-        adb.setPositiveButton("Delete", new AlertDialog.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                    SnackbarManager.show(
-                        Snackbar.with(getApplicationContext()) // context
-                                .text("Job Deleted")
-                                .actionLabel("Undo")
-                                .actionColor(Color.YELLOW)
-
-                                .actionListener(new ActionClickListener() {
-                                    @Override
-                                    public void onActionClicked(Snackbar snackbar) {
-
-                                    }
-                                })
-                        , (Activity) mContext);
-
-            }});
+        adb.setPositiveButton("Delete", null);
         adb.show();}
 }
 

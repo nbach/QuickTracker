@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -88,6 +89,8 @@ public class JobDetailsActivity extends ActionBarActivity {
         mLayoutManager = new LinearLayoutManager(this);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
+
+
 
         final GestureDetector mGestureDetector = new GestureDetector(JobDetailsActivity.this, new GestureDetector.SimpleOnGestureListener() {
 
@@ -256,6 +259,13 @@ public class JobDetailsActivity extends ActionBarActivity {
                 holder = (ViewHolder)convertView.getTag();
             }
             holder.textView.setText(mData.get(position).get_name());
+            holder.textView.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View arg0) {
+                    // ShowPlacePref(places, position);
+                    Intent intent = new Intent(JobDetailsActivity.this, JobExpandedDetailActivity.class);
+                    startActivity(intent);
+                }
+            });
             holder.deleteButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View arg0) {

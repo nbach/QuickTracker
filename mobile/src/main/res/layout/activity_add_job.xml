@@ -73,7 +73,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_location_gray" />
 
-            <EditText
+            <AutoCompleteTextView
+                android:completionThreshold="1"
                 android:id="@+id/addressEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,7 +82,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_toRightOf="@+id/addressImage"
                 android:background="@null"
-                android:hint="Street"
+                android:hint="Address"
                 android:inputType="textPostalAddress" />
         </LinearLayout>
 

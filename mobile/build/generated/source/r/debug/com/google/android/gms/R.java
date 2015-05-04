@@ -175,7 +175,7 @@ public final class R {
 		public static final int decline = 0x7f0e0034;
 		public static final int store_picture_message = 0x7f0e003b;
 		public static final int store_picture_title = 0x7f0e003c;
-		public static final int wallet_buy_button_place_holder = 0x7f0e0044;
+		public static final int wallet_buy_button_place_holder = 0x7f0e0045;
 	}
 	public static final class style {
 		public static final int Theme_IAPTheme = 0x7f0f00b5;

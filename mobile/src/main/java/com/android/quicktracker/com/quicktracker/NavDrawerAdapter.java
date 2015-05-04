@@ -71,7 +71,7 @@ public class NavDrawerAdapter extends RecyclerView.Adapter<NavDrawerAdapter.View
             holder.imageView.setImageResource(mIcons[position - 1]);
         }
         else {
-            holder.headerTextView.setText("Navigation");
+            holder.headerTextView.setText("Menu");
         }
     }
 
