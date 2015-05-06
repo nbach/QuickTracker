@@ -6,7 +6,8 @@
     android:elevation="7dp"
     tools:context="com.android.quicktracker.com.quicktracker.JobExpandedDetailActivity">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:context="com.android.quicktracker.com.quicktracker.JobExpandedDetailActivity">
@@ -15,10 +16,66 @@
             android:id="@+id/tool_bar"
             layout="@layout/tool_bar"></include>
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addressLP"
+                android:text="Example Job"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/firstDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginRight="15dp"
+                android:background="#ffd3d3d3" />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/avg"
+                android:text="@string/addr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/addressLP"
@@ -26,8 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
@@ -37,12 +93,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/addressLP"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
+                android:text="503 W High St, Urbana"
                 />
             <TextView
                 android:id="@+id/addressRP"
@@ -50,18 +106,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/jobDetailAddress"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
-        </RelativeLayout>
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/avg"
+                android:text="@string/pay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/dollarSignPerHour"
@@ -69,8 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
@@ -80,112 +156,137 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/dollarSignPerHour"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
+                android:text="15.00 "
                 />
             <TextView
                 android:text="@string/per_hour"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/jobDetailHourly"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
-        </RelativeLayout>
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/jobDetailHoursThisWeek"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
+                android:text="20 "
                 />
             <TextView
                 android:text="@string/this_week"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/jobDetailHoursThisWeek"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
-        </RelativeLayout>
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/dollarSignETW"
+                android:text="$"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:maxEms="11"
+                android:singleLine="true"
+                />
 
             <TextView
                 android:id="@+id/jobDetailEarnedThisWeek"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
+                android:layout_toRightOf="@+id/dollarSignETW"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
+                android:text="200.00 "
                 />
             <TextView
                 android:text="@string/earned_this_week"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/jobDetailEarnedThisWeek"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
-        </RelativeLayout>
-
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/avg"
                 android:text="@string/avg"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/jobDetailAvgHoursPerDay"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/avg"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
+                android:text="6 "
                 />
             <TextView
                 android:id="@+id/hpd"
@@ -193,39 +294,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/jobDetailAvgHoursPerDay"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/jobDetailAvgHoursPerWeek"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/hpd"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
+                android:text="30 "
                 />
             <TextView
                 android:text="@string/per_week"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
-                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/jobDetailAvgHoursPerWeek"
-                android:textSize="12sp"
+                android:textSize="20sp"
                 android:ellipsize="end"
                 android:maxEms="11"
                 android:singleLine="true"
                 />
-        </RelativeLayout>
-    </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView"
         android:layout_width="320dp"
