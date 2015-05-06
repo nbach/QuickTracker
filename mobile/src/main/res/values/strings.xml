@@ -10,6 +10,7 @@
     <string name="title_activity_nav_drawer_adapter">NavDrawerAdapter</string>
     <string name="title_activity_calendar">Calendar</string>
     <string name="title_activity_add_time">Manually Add Time</string>
+    <string name="title_activity_learn_more">Learn More</string>
     <string name="openDrawer">open</string>
     <string name="closeDrawer">close</string>
     <string name="color_prompt">Color</string>

@@ -1,0 +1,95 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp"
+    tools:context="com.android.quicktracker.com.quicktracker.LearnMoreActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.android.quicktracker.com.quicktracker.JobExpandedDetailActivity">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+        <TextView
+            android:text="QuickTracker is a time tracking app utilizing GPS and Android Wear. It was made for CS465 in the spring semester of 2015."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:textSize="20sp"
+            android:ellipsize="none"
+            />
+        <TextView
+            android:text="QuickTracker was made by Nick Bachmair, Evan Gryska, Aditi Mocharla, and Kyle McDaniel."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:textSize="20sp"
+            android:ellipsize="none"
+            />
+        <TextView
+            android:text="To add your first job, go to the Job Details page. After you are on the job details page, click the orange circle."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:textSize="20sp"
+            android:ellipsize="none"
+            />
+        <TextView
+            android:text="To view the detailed report about a specific job, click the job's name on the Job Details page."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:textSize="20sp"
+            android:ellipsize="none"
+            />
+        <TextView
+            android:text="To view a calendar with the hours you have worked, or to manually add hours, go to the Calendar page."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:textSize="20sp"
+            android:ellipsize="none"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#2196F3"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>

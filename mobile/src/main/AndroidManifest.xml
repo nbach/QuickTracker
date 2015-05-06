@@ -66,6 +66,10 @@
             android:name=".JobExpandedDetailActivity"
             android:label="@string/title_activity_job_expanded_detail" >
         </activity>
+        <activity
+            android:name=".LearnMoreActivity"
+            android:label="@string/title_activity_learn_more" >
+        </activity>
     </application>
 
 </manifest>

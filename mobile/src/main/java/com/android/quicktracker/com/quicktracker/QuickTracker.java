@@ -6,12 +6,10 @@ import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -22,7 +20,6 @@ import com.google.android.gms.location.GeofencingRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
 
-import java.util.Calendar;
 import java.util.List;
 
 
@@ -52,7 +49,8 @@ public class QuickTracker extends Activity implements ResultCallback<Status>, Go
 
     View.OnClickListener myhandler2 = new View.OnClickListener() {
         public void onClick(View v) {
-
+            Intent intent = new Intent(QuickTracker.this, LearnMoreActivity.class);
+            startActivity(intent);
         }
     };
 
